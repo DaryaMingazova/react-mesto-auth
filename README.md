@@ -4,7 +4,7 @@
 
 
 ### Технологии:
-+ HTML5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
++ HTML
 + CCS
 + JavaScript
 + Адаптивная верстка (десктопы, планшеты, мобильные устройства)
