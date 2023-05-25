@@ -28,7 +28,7 @@ function Card(props) {
 
   return(
     <figure className="element">
-      <img className="element__image" src={props.link} alt={props.name} onClick={handleClick}/>
+      <img className="element__image" src={props.link} alt={props.name} title="Посмотреть в полном размере" onClick={handleClick}/>
       <button className={cardDeleteButtonClassName} type="button" title="Удалить" onClick={handleDeleteClick}/>
       <figcaption className="element__info">
         <h2 className="element__caption">{props.name}</h2>

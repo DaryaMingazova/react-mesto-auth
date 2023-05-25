@@ -23,11 +23,11 @@ function EditAvatarPopup(props) {
       onClose={props.onClose}
       name={'avatar'}
       form={'placeData'}
-      title={'Обновить профиль'}
+      title={'Обновить аватар'}
       buttonText={'Сохранить'}
       onSubmit={handleSubmit}
     >
-      <input ref={ref} className="popup__input" id="avatar_link" name="avatar_link" type="url" placeholder="Ссылка на профиль" required/>
+      <input ref={ref} className="popup__input" id="avatar_link" name="avatar_link" type="url" placeholder="Ссылка на аватар" required/>
       <span className="popup__input-error" id="avatar_link-error"/>
     </PopupWithForm>
   )

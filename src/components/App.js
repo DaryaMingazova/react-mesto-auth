@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
 import api from "../utils/api";
-import Header from './Header';
 import * as auth from "../utils/auth";
-import Main from './Main';
-import Footer from './Footer';
+import Header from "./Header";
+import Main from "./Main";
+import Footer from "./Footer";
 import EditProfilePopup from "./EditProfilePopup";
 import AddPlacePopup from "./AddPlacePopup";
 import EditAvatarPopup from "./EditAvatarPopup";
 import ImagePopup from "./ImagePopup";
-import { CurrentUserContext } from "../contexts/CurrentUserContext";
 import Login from "./Login";
 import Register from "./Register";
 import ProtectedRoute from "./ProtectedRoute";
 import InfoTooltip from "./InfoTooltip";
 import resolve from "../images/resolve.svg";
 import reject from "../images/reject.svg";
-
 
 function App() {
   const navigate = useNavigate();
